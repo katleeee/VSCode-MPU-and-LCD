@@ -1,0 +1,15 @@
+# PlatformIO compiled files and libraries
+.pio/
+.pioenvs/
+.piolibdeps/
+lib/deps/
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code specific
+.vscode/.browse.vc.db
+.vscode/.cpp.hint
+.vscode/.gcc.json

@@ -21,12 +21,6 @@ void setup(void) {
   // Turn on the blacklight
   lcd.setBacklight((uint8_t)1);
 
-  // First row
-  lcd.print("Hello, world!");
-
-  // Second row
-  lcd.setCursor(0,1);
-  lcd.print("Steve Kemp");
 
   Serial.begin(115200);
   while (!Serial)
@@ -141,27 +135,27 @@ void loop() {
   //LCD//
   lcd.clear();
   lcd.setCursor (0,0);
-  lcd.print("X:");
+  lcd.print("X");
   lcd.print(a.acceleration.x);
 
   lcd.setCursor(7,0);
-  lcd.print("Y:");
+  lcd.print("Y");
   lcd.print(a.acceleration.y);
 
   lcd.setCursor(12,0);
-  lcd.print("Z:");
+  lcd.print(" Z");
   lcd.print(a.acceleration.z);
 
   lcd.setCursor(0,1);
-  lcd.print("X:");
+  lcd.print("X");
   lcd.print(g.gyro.x);
 
   lcd.setCursor(7,1);
-  lcd.print("Y:");
+  lcd.print("Y");
   lcd.print(g.gyro.y);
 
   lcd.setCursor(12,1);
-  lcd.print("Z:");
+  lcd.print(" Z");
   lcd.print(g.gyro.z);
 
   lcd.setCursor(0,2);
